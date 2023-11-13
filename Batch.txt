@@ -1,0 +1,19 @@
+@echo off 
+rem this start helps to open 2 different script at a same time in 2 different windows
+start python "C:\Users\TARUN\Desktop\Bat Files\app.py"
+start python "C:\Users\TARUN\Desktop\KeyBoard Test Script\src\app.py"
+pause
+
+
+you can add additional parameters to the start command, such as /B to start an application 
+without creating a new window or /WAIT to make the batch file wait until the application or 
+process started by start ends.
+
+For example, to start a program without creating a new window:
+start /B notepad.exe
+
+And to wait for the program to finish:
+start /WAIT notepad.exe
+
+The start command in batch scripting is quite versatile, allowing you to control the behavior
+ of the initiated process
